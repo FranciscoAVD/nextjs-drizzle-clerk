@@ -52,6 +52,7 @@ const books = pgTable(
 export { authors, books };
 
 //-------------Relations-------------
+//DOCS: https://orm.drizzle.team/docs/relations-v2
 export const relations = defineRelations(
   { authors, books },
   (r) => ({

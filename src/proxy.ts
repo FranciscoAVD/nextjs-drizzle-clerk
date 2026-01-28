@@ -1,3 +1,4 @@
+//DOCS: https://clerk.com/docs/reference/nextjs/clerk-middleware
 import {
   clerkMiddleware,
   createRouteMatcher,
