@@ -8,6 +8,7 @@
     "start": "next start",
     "db:push": "bunx drizzle-kit push",
     "db:studio": "bunx drizzle-kit studio",
+    "feat": "bun run gen-feat.ts",
     "lint": "eslint"
   },
   "dependencies": {
