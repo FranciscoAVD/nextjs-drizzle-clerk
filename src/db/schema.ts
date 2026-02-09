@@ -1,4 +1,3 @@
-import { defineRelations } from "drizzle-orm";
 import {
   pgTable,
   integer,
@@ -50,20 +49,3 @@ const books = pgTable(
 );
 
 export { authors, books };
-
-//-------------Relations-------------
-//DOCS: https://orm.drizzle.team/docs/relations-v2
-export const relations = defineRelations(
-  { authors, books },
-  (r) => ({
-    books: {
-      author: r.one.authors({
-        from: r.books.authorId,
-        to: r.authors.id,
-      }),
-    },
-    authors: {
-      books: r.many.books(),
-    },
-  }),
-);
