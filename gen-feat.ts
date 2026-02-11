@@ -70,7 +70,6 @@ async function generateFeatureStructure() {
         path: path.join(featureDir, "lib", "hooks.ts"),
         content: "// Feature-specific utilities",
       },
-      /*
       {
         path: path.join(
           featureDir,
@@ -79,7 +78,6 @@ async function generateFeatureStructure() {
         ),
         content: `// Zustand store ${featureName}`,
       },
-      */
     ];
 
     // Create subdirectories
