@@ -28,10 +28,8 @@ export async function tryCatch<T>(
   fn: (() => Promise<T>) | Promise<T>,
 ): Promise<[T, null] | [null, Error]> {
   try {
-    let res: T = await (typeof fn === "function"
-      ? fn()
-      : fn);
-    return [res, null];
+    let data: T = await (typeof fn === "function" ? fn() : fn);
+    return [data, null];
   } catch (err) {
     return [
       null,
