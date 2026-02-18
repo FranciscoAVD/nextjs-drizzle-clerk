@@ -7,6 +7,7 @@ export const relations = defineRelations(schema, (r) => ({
     author: r.one.authors({
       from: r.books.authorId,
       to: r.authors.id,
+      optional: false,
     }),
   },
   authors: {
