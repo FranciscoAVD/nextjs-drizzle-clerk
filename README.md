@@ -12,12 +12,12 @@ Core:
 Niceties:
 - Data validation: Zod
 - State management: Zustand
-- Environment variables management: t3-env
-- Style System: Shadcn
+- Environment variables: T3 env
+- Style System: Shadcn UI
 - Formatting: Prettier
 - Linting: ESLint
 
 Scripts:
 - "feat": Folder structure generation
 - "db:push": Schema migration
-- "db:studio": Table view
+- "db:studio": Database table view
